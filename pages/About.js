@@ -1,1 +1,1 @@
-export default () => <p>Welcome to About!</p>
+export default () => <p class={'mar25'}>Welcome to About!</p>

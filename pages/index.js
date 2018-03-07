@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import css from "../styles/styles.scss";
+import global from "../styles/styles.js";
 // import css from "../styles/styles.min.css"
 
 export default () =>
-<div style={{ color : 'red' }}>
-
+<div >
+  <style jsx>{global}</style>
   <style jsx>{`
   .custom {
     color: green;
@@ -15,27 +15,23 @@ export default () =>
   }
   `}</style>
 
-  Welcome to next.js!
+
   <Head>
-    <title>TON</title>
+    <title>Fifi - A BoilerPlate of Next JS + ANT Design + Redux + Styled JSX with SCSS</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   </Head>
-  <img src="/static/images/logo.svg" />
 
-  <div className={css.example}>
-    Click{' '}
+  <div className={'header'}></div>
+
+  <div className=" gutter container">
+  <h1 className="dodger">Fifi</h1>
+  <h3 className={['ebony']}>ReactJS + Redux + NextJS + Styled JSX + ANT Design</h3>
+
+  <p className={'example'}>
     <Link href={{ pathname: '/About', query: { name: 'Zeit' } }}>
-      <a>here</a>
-    </Link>{' '}
-    to read more read moreeeeee
-  </div>
-
-  <div className="custom">
-
-    Hola
-
-    <span>hohohoh </span>
+      <a>Sample Page</a>
+    </Link>
+  </p>
 
   </div>
-
 </div>
