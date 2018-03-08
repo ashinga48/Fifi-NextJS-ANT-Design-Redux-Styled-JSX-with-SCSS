@@ -1,4 +1,5 @@
 import css from 'styled-jsx/css';
+// import 'antd/dist/antd.css';
 
 //ABOUT PAGE CSS
 import AboutCSS from './AboutCSS';

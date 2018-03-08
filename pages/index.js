@@ -3,8 +3,13 @@ import Link from 'next/link';
 import global from "../styles/styles.js";
 // import css from "../styles/styles.min.css"
 
+import stylesheet from 'antd/dist/antd.min.css';
+import { DatePicker } from 'antd';
+import { Avatar, Badge } from 'antd';
+
 export default () =>
 <div >
+  <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
   <style jsx>{global}</style>
   <style jsx>{`
   .custom {
@@ -31,6 +36,14 @@ export default () =>
     <Link href={{ pathname: '/About', query: { name: 'Zeit' } }}>
       <a>Sample Page</a>
     </Link>
+  </p>
+
+  <p>
+  <DatePicker />
+  </p>
+
+  <p>
+  <Badge count={1}><Avatar shape="square" icon="user" /></Badge>
   </p>
 
   </div>
