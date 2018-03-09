@@ -4,9 +4,21 @@ import global from "../styles/styles.js";
 import React, { Component } from 'react';
 // import css from "../styles/styles.min.css"
 
-import stylesheet from 'antd/dist/antd.min.css';
-import { DatePicker } from 'antd';
-import { Avatar, Badge } from 'antd';
+// import stylesheet from 'antd/dist/antd.min.css';
+// import DatePickerCSS from 'antd/lib/date-picker/style/index.css';
+// import DatePicker from 'antd/lib/date-picker';
+// import RangePicker from 'antd/lib/date-picker/RangePicker'
+// import { DatePicker } from 'antd';
+
+
+import stylesheet from 'antd/lib/style/index.css';
+// import stylesheet from 'antd/dist/antd.min.css';
+import style_badge from 'antd/lib/badge/style/index.css';
+
+import DatePicker from 'antd/lib/date-picker';
+import Avatar from 'antd/lib/avatar';
+import Badge from 'antd/lib/badge';
+const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 
 export default class extends Component{
 
@@ -14,6 +26,8 @@ export default class extends Component{
   render(){
     return <div >
       <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+      <style dangerouslySetInnerHTML={{ __html: style_badge }} />
+
       <style jsx>{global}</style>
       <style jsx>{`
       .custom {
@@ -44,11 +58,20 @@ export default class extends Component{
 
       <p>
       <DatePicker />
+      <RangePicker />
       </p>
 
+
       <p>
-      <Badge count={1}><Avatar shape="square" icon="user" /></Badge>
+        <Badge status="success" />
+        <Badge status="error" />
+        <Badge status="default" />
+        <Badge status="Default" />
+        <Badge status="Processing" />
+        <Badge status="Warning" />
+        <Badge style={{ backgroundColor: '#52c41a' }} count={65}></Badge>
       </p>
+
 
       </div>
     </div>
