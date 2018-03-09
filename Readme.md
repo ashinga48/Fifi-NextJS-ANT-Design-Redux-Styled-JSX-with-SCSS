@@ -13,6 +13,9 @@ whereas working with [React Starter Kit](https://github.com/kriasoft/react-start
 - [x] SCSS
 - [x] Seperate SCSS files
 - [x] Integrate ANT design
+- [x] Express JS
+- [x] Code Compression ( Extreme performance )
+
 
 ### Things to do
 

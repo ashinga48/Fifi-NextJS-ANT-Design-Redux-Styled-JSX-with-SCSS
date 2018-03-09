@@ -7,6 +7,8 @@
     "@zeit/next-sass": "^0.1.1",
     "antd": "^3.2.3",
     "babel-plugin-inline-import": "^2.0.6",
+    "compression": "^1.7.2",
+    "express": "^4.16.2",
     "file-loader": "^1.1.11",
     "next": "^5.0.0",
     "node-sass": "^4.7.2",
@@ -18,9 +20,12 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "next",
+    "old_dev": "next",
+    "old_build": "next build",
+    "old_start": "next start -p $PORT",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "NODE_ENV=production node server.js -p $PORT",
     "heroku-postbuild": "next build"
   },
   "author": "kesanam.ravi@gmail.com",
