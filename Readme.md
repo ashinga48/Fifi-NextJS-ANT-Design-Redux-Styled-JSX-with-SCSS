@@ -11,10 +11,10 @@ whereas working with [React Starter Kit](https://github.com/kriasoft/react-start
 
 - [x] SCSS
 - [x] Seperate SCSS files
+- [x] Integrate ANT design
 
 ### Things to do
 
-- [ ] Integrate ANT design
 - [ ] Integrate Redux
 
 
@@ -23,9 +23,38 @@ Many other UI frameworks like Grommet, Materialise CSS etc are doing a good job.
 
 ### How
 
+1. Development ```npm run dev```
+2. Build & Run ```npm run build``` &&  ```npm run start```
+
+### Doc
+
+#### 1. ANT Design imports optimisation ( to reduce build size )
+
+Replace
 ```
-npm run dev
+import { DatePicker, Avatar, Badge } from 'antd';
 ```
+with
+```
+import DatePicker from 'antd/lib/date-picker';
+import Avatar from 'antd/lib/avatar';
+import Badge from 'antd/lib/badge';
+```
+
+with that build changed from **1.4MB to 560KB**
+
+#### 2. ANT Design CSS import
+
+Instead statical import of full css  like this
+```
+import stylesheet from 'antd/dist/antd.min.css';
+```
+Use
+```
+import stylesheet from 'antd/lib/style/index.css'
+import Badge_CSS from 'antd/lib/badge/style/index.css'
+```
+
 
 ### Extra
 

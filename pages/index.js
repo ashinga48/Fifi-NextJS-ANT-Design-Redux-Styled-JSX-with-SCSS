@@ -2,17 +2,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import global from "../styles/styles.js";
 import React, { Component } from 'react';
-// import css from "../styles/styles.min.css"
-
-// import stylesheet from 'antd/dist/antd.min.css';
-// import DatePickerCSS from 'antd/lib/date-picker/style/index.css';
-// import DatePicker from 'antd/lib/date-picker';
-// import RangePicker from 'antd/lib/date-picker/RangePicker'
-// import { DatePicker } from 'antd';
-
 
 import stylesheet from 'antd/lib/style/index.css';
-// import stylesheet from 'antd/dist/antd.min.css';
 import style_badge from 'antd/lib/badge/style/index.css';
 
 import DatePicker from 'antd/lib/date-picker';
