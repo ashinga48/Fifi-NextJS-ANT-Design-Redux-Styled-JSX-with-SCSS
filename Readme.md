@@ -1,7 +1,8 @@
-#Fifi
+# **fifi**
 
 A boilerplate with [NextJS](https://github.com/zeit/next.js/) + [ANT Design](ant.design) + Redux + [Styled JSX with SCSS](https://www.npmjs.com/package/@zeit/next-sass)
 
+#### [DEMO](https://fifi-ashinga.herokuapp.com/)
 
 With a lot of research and experimentation NextJS is the best framework to work with React JS ( Server side rendering + Code Splitting ) and better performance.
 
@@ -60,3 +61,4 @@ import Badge_CSS from 'antd/lib/badge/style/index.css'
 
 If you are looking something for production like project
 - [React Universally](https://github.com/ctrlplusb/react-universally) has "Now" based deployments, but doesn't have UI framework
+- Thanks [Mars](https://github.com/mars/heroku-nextjs) nextjs deployment
