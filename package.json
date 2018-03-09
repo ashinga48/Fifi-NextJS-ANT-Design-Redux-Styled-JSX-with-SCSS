@@ -20,7 +20,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build"
   },
   "author": "kesanam.ravi@gmail.com",
   "license": "ISC"
