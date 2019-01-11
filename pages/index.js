@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import global from "../styles/styles.js";
+// import global from "../styles/styles.js";
 import React, { Component } from 'react';
 
-import stylesheet from 'antd/lib/style/index.css';
-import style_badge from 'antd/lib/badge/style/index.css';
+// import stylesheet from 'antd/lib/style/index.css';
+// import style_badge from 'antd/lib/badge/style/index.css';
+
 
 import DatePicker from 'antd/lib/date-picker';
 import Avatar from 'antd/lib/avatar';
@@ -16,10 +17,10 @@ export default class extends Component{
 
   render(){
     return <div >
-      <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+      {/*<style dangerouslySetInnerHTML={{ __html: stylesheet }} />
       <style dangerouslySetInnerHTML={{ __html: style_badge }} />
-
-      <style jsx>{global}</style>
+*/}
+      {/*<style jsx>{global}</style>
       <style jsx>{`
       .custom {
         color: green;
@@ -27,7 +28,7 @@ export default class extends Component{
           color: violet;
         }
       }
-      `}</style>
+      `}</style>*/}
 
 
       <Head>
@@ -39,7 +40,7 @@ export default class extends Component{
 
       <div className=" gutter container">
       <h1 className="dodger">Fifi</h1>
-      <h3 className={['ebony']}>ReactJS + Redux + NextJS + Styled JSX + ANT Design</h3>
+      <h3 className={['ebony']}>ReactJS + SEO + NextJS + Styled JSX + ANT Design</h3>
 
       <p className={'example'}>
         <Link href={{ pathname: '/about', query: { name: 'Ravi' } }}>

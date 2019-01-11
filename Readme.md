@@ -1,6 +1,6 @@
 # **fifi**
 
-A boilerplate with [NextJS](https://github.com/zeit/next.js/) + [ANT Design](ant.design) + Redux + [Styled JSX with SCSS](https://www.npmjs.com/package/@zeit/next-sass)
+A boilerplate with [NextJS](https://github.com/zeit/next.js/) + [ANT Design](ant.design) + [Styled JSX with SCSS](https://www.npmjs.com/package/@zeit/next-sass)
 
 #### [DEMO](https://fifi-ashinga.herokuapp.com/)
 
@@ -10,17 +10,12 @@ whereas working with [React Starter Kit](https://github.com/kriasoft/react-start
 
 ### What it has
 
-- [x] SCSS
+- [x] SCSS direct import to your components ( see about page for example )
 - [x] Seperate SCSS files
 - [x] Integrate ANT design
 - [x] Express JS
 - [x] Code Compression ( Extreme performance )
-
-
-### Things to do
-
-- [ ] Integrate Redux
-
+- [x] SEO from [NEXT SEO](https://github.com/garmeeh/next-seo)
 
 
 Many other UI frameworks like Grommet, Materialise CSS etc are doing a good job. I see ANT Design is much more sophisticated.
@@ -34,31 +29,9 @@ Many other UI frameworks like Grommet, Materialise CSS etc are doing a good job.
 
 #### 1. ANT Design imports optimisation ( to reduce build size )
 
-Replace
 ```
 import { DatePicker, Avatar, Badge } from 'antd';
 ```
-with
-```
-import DatePicker from 'antd/lib/date-picker';
-import Avatar from 'antd/lib/avatar';
-import Badge from 'antd/lib/badge';
-```
-
-with that build changed from **1.4MB to 560KB**
-
-#### 2. ANT Design CSS import
-
-Instead statical import of full css  like this
-```
-import stylesheet from 'antd/dist/antd.min.css';
-```
-Use
-```
-import stylesheet from 'antd/lib/style/index.css'
-import Badge_CSS from 'antd/lib/badge/style/index.css'
-```
-
 
 ### Extra
 

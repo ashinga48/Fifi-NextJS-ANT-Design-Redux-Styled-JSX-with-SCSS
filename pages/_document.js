@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
 
         <Head>
           <link rel="stylesheet" type="text/css" href="/static/styles/global.min.css" />
+          <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/antd/3.2.0/antd.min.css' />
           <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" />
 
         </Head>
